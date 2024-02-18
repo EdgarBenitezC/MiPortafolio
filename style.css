@@ -1,0 +1,92 @@
+header{
+    background-color: rgb(20, 11, 40);
+}
+h1 img {
+    width: 200px;
+    height: 200px;}
+.menuArriba {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: baseline; /* Alineación a la derecha */
+    }
+.menuArriba li {
+        margin-left: 50px; /* espacio entre palabras */
+    }
+.menuArriba li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    
+}
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: azure;
+    transition: .3s;
+}
+.perfil{
+    background-color: rgb(136, 5, 209) ;
+}
+.miFoto img{
+    width: 400px;
+    height: 400px;
+}
+/*Telefono*/
+@media(max-width: 767px) {
+    .col {
+        text-align: center;/* para alinear la parte del header en version movil*/
+    }
+    .miFoto{
+        text-align: center;/* para alinear la parte de mi foto en version movil*/
+    }
+}
+.perfil .col{
+    grid-template-areas: 
+    "col col";
+
+}
+.card-body{
+    width: 400px;
+    height: 400px;
+    background-color:rgb(136, 5, 209) ;
+    color: white;
+}
+.footer{
+    height: 400px;
+    background-color: rgb(20, 11, 40);
+    color: white;
+}
+footer hr{
+    border: none; /* Elimina el borde predeterminado del hr */
+    height: 5px;
+    background-color: black; 
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.footer a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    color: aquamarine;
+}
+body, main {
+    background-color: rgb(136, 5, 209)}
+/*
+Colores
+rgb
+20 11 40
+53 1 82
+136 5 209
+197 156 200
+0 0 0
+252 247 255
+*/
